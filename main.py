@@ -27,11 +27,15 @@ class AlienInvasion:
         # set ship
         self.ship = Ship(self)
 
+        # set bullets
+        self.bullets = pygame.sprite.Group()
+
     def run_game(self):
         """Start main loop for game"""
         while True:
             self._check_events()
             self.ship.update()
+            self.bullets.update()
             self._update_screen()
 
     def _check_events(self):
