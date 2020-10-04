@@ -11,10 +11,10 @@ class Ship:
         self.screen_rect = ai_game.screen.get_rect()
 
         # load the original image, change to wanted to dimensions and load for pygame 
-        self.image = Image.open('images/rocket.png')
+        self.image = Image.open('images/buzz.png')
         self.new_image = self.image.resize((80,80))
-        self.new_image.save('images/rocket_300.png')
-        self.image = pygame.image.load('images/rocket_300.png')
+        self.new_image.save('images/img_300.png')
+        self.image = pygame.image.load('images/img_300.png')
         self.rect = self.image.get_rect()
 
         # start each new ship at the nottom center of the screen 
