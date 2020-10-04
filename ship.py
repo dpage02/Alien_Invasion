@@ -12,7 +12,7 @@ class Ship:
 
         # load the original image, change to wanted to dimensions and load for pygame 
         self.image = Image.open('images/rocket.png')
-        self.new_image = self.image.resize((110,110))
+        self.new_image = self.image.resize((80,80))
         self.new_image.save('images/rocket_300.png')
         self.image = pygame.image.load('images/rocket_300.png')
         self.rect = self.image.get_rect()
